@@ -1635,3 +1635,201 @@ main {
 .design-category .design-project {
     margin-bottom: 90px;
 }
+
+```css
+/* =========================
+   AI-ASSISTED DESIGN
+========================= */
+
+.ai-design-block {
+    width: 100%;
+    margin-top: 40px;
+    padding: 55px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.ai-design-label {
+    margin-bottom: 45px;
+
+    color: #ff302d;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+}
+
+
+.ai-design-content {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   AI HEADING
+========================= */
+
+.ai-design-heading h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 70px);
+
+    line-height: 1.02;
+
+    font-weight: 600;
+
+    letter-spacing: -3px;
+}
+
+
+.ai-design-heading h3 span {
+    color: rgba(255, 255, 255, 0.38);
+}
+
+
+/* =========================
+   AI TEXT
+========================= */
+
+.ai-design-text {
+    max-width: 520px;
+}
+
+
+.ai-design-text p {
+    margin: 0 0 22px;
+
+    color: rgba(255, 255, 255, 0.52);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   AI TAGLINE
+========================= */
+
+.ai-design-line {
+    display: block;
+
+    margin-top: 35px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SUBTLE HOVER EFFECT
+========================= */
+
+.ai-design-block {
+    transition: border-color 0.4s ease;
+}
+
+
+.ai-design-block:hover {
+    border-color: rgba(255, 48, 45, 0.22);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .ai-design-block {
+        margin-top: 20px;
+
+        padding: 40px 0;
+    }
+
+
+    .ai-design-label {
+        margin-bottom: 30px;
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .ai-design-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .ai-design-heading h3 {
+        font-size: 42px;
+
+        line-height: 1.05;
+
+        letter-spacing: -2px;
+    }
+
+
+    .ai-design-text {
+        max-width: 100%;
+    }
+
+
+    .ai-design-text p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .ai-design-line {
+        margin-top: 30px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 450px) {
+
+    .ai-design-block {
+        padding: 35px 0;
+    }
+
+
+    .ai-design-heading h3 {
+        font-size: 36px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .ai-design-text p {
+        font-size: 13px;
+    }
+
+}
